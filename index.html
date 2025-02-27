@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>BUAT MILA</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="imgBox">
+            <div class="bark"></div>
+            <img src="bu guru milaa.jpg">
+        </div>
+        <div class="details">
+            <h4 class="color1">Halo bu guruu</h4>
+            <h4 class="color2">Buat kamu nih</h4>
+            <p>Maafin nopal ya soal tadi malem</p>
+            <p>nopal ga bermaksud apa apa ke kamu</p>
+            <p>Niatnya cuman bercanda</p>
+            <p>tapi mungkin kelewatan</p>
+            <p>Nopal janji ga gitu lagi</p>
+            <p>Maaf ya sekali lagi Bu guru</p>
+            <p>Apalah daya saya hanya seorang manusia</p>
+            <p>yang tidak luput dari kesalahan</p>
+            <p>Sekali lagi maaf ya</p>
+
+            <p>Jangan ngambek lagi ya</p>
+            <p class="text-right">love you bu guru</p>
+            <p class="text-right">dah itu aja</p>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+<button onclick="enableSound()">play music</button>
+
+<script>
+    function enableSound() {
+        var audio = document.getElementById("audio");
+        audio.muted = false; // Mengaktifkan suara
+        audio.play();
+    }
+</script>
+
+
+<audio id="audio" autoplay muted>
+    <source src="keepyousafe.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    window.onload = function() {
+        var audio = document.getElementById("audio");
+        audio.muted = false; // Mengaktifkan suara setelah halaman dimuat
+        audio.play().catch(error => console.log("Autoplay mungkin diblokir:", error));
+    };
+</script>
+
+
+
+
+</html>
